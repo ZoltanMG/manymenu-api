@@ -1,0 +1,11 @@
+{
+    "name_receta": "",
+    "id": "",
+    "fecha_creacion": "",
+    "fecha_actualizacion": "",
+    "favorito": "False",
+    "descripcion": "",
+    "ingredienes": [],
+    "procedimiento": "",
+    "etiqueta": []
+}
