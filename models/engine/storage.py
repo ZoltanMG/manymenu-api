@@ -33,10 +33,15 @@ class DBStorage:
             with open(file_name,"w",  encoding="utf-8") as file:
                 file.write(request_to_string)
     
-    def get_all(self):
-        recipes = {}
-        for recipe in self.all_recipes.values():
-            recipes[recipe.id] = recipe.__dict__
+    def get_all(self, response=False):
+        if response:
+            recipes = []
+            for recipe in self.all_recipes.values():
+                recipes.append(recipe.__dict__)
+        else:
+            recipes = {}
+            for recipe in self.all_recipes.values():
+                recipes[recipe.id] = recipe.__dict__
         return recipes
     
     def get(self, id):
