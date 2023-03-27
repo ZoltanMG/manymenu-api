@@ -16,9 +16,11 @@ def reseta():
     if request.method == "POST":
         recipe_name = request.json['recipe_name']
         ingredients = request.json['ingredients']
+        favorite = request.json['favorite']
         new_recipe = Recipe(
             recipe_name=recipe_name,
-            ingredients=ingredients
+            ingredients=ingredients,
+            favorite=favorite
             )
         new_recipe.save()
         return jsonify(new_recipe.__dict__), 200

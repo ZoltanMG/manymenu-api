@@ -15,6 +15,7 @@ class DBStorage:
             self.all_recipes[recipe[1]['id']] = self.all_recipes.get(recipe[1]['id'], Recipe(
             recipe_name=recipe[1]['recipe_name'],
             ingredients=recipe[1]['ingredients'],
+            favorite=recipe[1]['favorite'],
             id=recipe[1]['id']
             ))        
     
