@@ -9,3 +9,18 @@
     "procedimiento": "",
     "etiqueta": []
 }
+
+{
+    "3fadfa8e-0b34-4ef3-8a3d-eae1915f692e": {
+        "id": "3fadfa8e-0b34-4ef3-8a3d-eae1915f692e",
+        "recipe_name": "Arroz con pollo",
+        "ingredients": [
+            "arroz",
+            "pollo",
+            "color",
+            "cebolla",
+            "verduras"
+        ],
+        "favorite": "false"
+    }
+}
