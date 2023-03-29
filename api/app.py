@@ -10,6 +10,13 @@ def home():
     all_recipes_to_response = storage.get_all(response=True)
     return all_recipes_to_response
 
+@app.route("/favorite", methods=['POST'], strict_slashes=False)
+def favorite():
+    recipe = storage.get(request.json['id'])
+    recipe.favorite = request.json['favorite']
+    recipe.save()
+    return "ok"
+
 
 @app.route("/reseta", methods=['POST', 'DELETE'], strict_slashes=False)
 def reseta():
