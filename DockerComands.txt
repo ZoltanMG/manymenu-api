@@ -1,0 +1,5 @@
+# crear una imagen a partir de un dockerfile
+docker build -t manymenu . 
+
+# correr una imagen
+docker run -d -p 5000:5000 manymenu
